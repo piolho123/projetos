@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f9f5f0;      
+}
+
+
+.texto_gradiente{
+    font-size: 90px;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #f7d3a8, #3b1f07, #725c40, #f7d3a8);
+    background-size: 400% 100%;
+    animation: degrade 10s linear infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    outline: none;
+}
+
+
+@keyframes degrade {
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
